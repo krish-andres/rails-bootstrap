@@ -7,7 +7,7 @@ class VisitorsController < ApplicationController
 	def create
 		@visitor = Visitor.new(secure_params)
 		if @visitor.valid?
-			# TODO Save Data
+			@visitor.update_spreadsheet
 			redirect_to root_path, notice: "Chose #{@visitor.favorite}"
 		else 
 			render :new
