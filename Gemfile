@@ -10,9 +10,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
+gem 'activerecord-tableless'
 gem 'bootstrap-sass'
+gem 'google_drive'
 gem 'high_voltage'
 gem 'thin'
+gem 'simple_form', '>= 3.1.0.rc1'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
